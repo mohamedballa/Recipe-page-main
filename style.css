@@ -15,15 +15,39 @@
     0 4px 6px -2px rgba(0, 0, 0, 0.05); 
 
     /*font variables*/
-    --font:" ";
+    --font-young:"Young serif";
+	--font-outfit-Black:"Outfit-Black";
+	--font-outfit-Bold:"Outfit-Bold";
+	--font-outfit-ExtraBlack:"Outfit-ExtraBlack";
+	--font-outfit-Extralight:"Outfit-Extralight";
+	--font-outfit-light:"Outfit-light";
+	--font-outfit-Medium:"Outfit-Medium";
+	--font-outfit-Regular:"Outfit-Regular";
+	--font-outfit-SemiBold:"Outfit-SemiBold";
+	--font-outfit-Thin:"Outfit-Thin";
+	--font-size:16px;
 
     /*color variables*/
     --black:black;
-    --white:white;
+    --white:hsl(0, 0%, 100%);
     --test-1:lightgreen;
     --border-test:red;
 
     /*other color variables*/
+	--stone-100: hsl(30, 54%, 90%);
+	--Stone-150: hsl(30, 18%, 87%);
+	--Stone-600: hsl(30, 10%, 34%);
+	--Stone-900: hsl(24, 5%, 18%);
+
+	--Brown-800: hsl(14, 45%, 36%);
+
+	--Rose-800: hsl(332, 51%, 32%);
+	--Rose-50: hsl(330, 100%, 98%);
+	/* Variables */
+	--max-width-Desktop: 1440px;
+	--max-widht-mobile:375px;
+	
+
 }
 
 body{
@@ -32,7 +56,53 @@ body{
 	padding: 0;
 }
 /*@font-face{font-family:; src:url();}*/
-
+@font-face {
+	font-family: "Young serif";
+	src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+@font-face {
+	font-family: "Outfit-Black";
+	src: url("./assets/fonts/outfit/static/Outfit-Black.ttf");
+}
+@font-face {
+	font-family: "Outfit-Bold";
+	src: url("./assets/fonts/outfit/static/Outfit-Bold.ttf");
+}
+@font-face {
+	font-family: "Outfit-ExtraBlack";
+	src: url("./assets/fonts/outfit/static/Outfit-ExtraBold.ttf");
+}
+@font-face {
+	font-family: "Outfit-ExtraLight";
+	src: url("./assets/fonts/outfit/static/Outfit-ExtraLight.ttf");
+}
+@font-face {
+	font-family: "Outfit-light";
+	src: url("./assets/fonts/outfit/static/Outfit-Light.ttf");
+}
+@font-face {
+	font-family: "Outfit-Medium";
+	src: url("./assets/fonts/outfit/static/Outfit-Medium.ttf");
+}
+@font-face {
+	font-family: "Outfit-Regular";
+	src: url("./assets/fonts/outfit/static/Outfit-Regular.ttf");
+}
+@font-face {
+	font-family: "Outfit-Semibold";
+	src: url("./assets/fonts/outfit/static/Outfit-SemiBold.ttf");
+}
+@font-face {
+	font-family: "Outfit-Thin";
+	src: url("./assets/fonts/outfit/static/Outfit-Thin.ttf");
+}
 .attributions{
 	margin-bottom: 0;
+}
+h1{
+	font-family: var(--font-outfit-Medium);
+	font-weight: 300;
+}
+p{
+	font-family: var(--font-young);
 }
