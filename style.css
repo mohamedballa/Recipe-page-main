@@ -108,18 +108,14 @@ body{
 	display: grid;
 	place-content: center;	
 	align-content: center;
-	border:var(--borderTest);
 	width: 100%;
-	height: 100%;
 }
 .recipe-container{
 	background-color:var(--white);
 	width: 100%;
-	height: 100%;
 	margin-top:5rem;
-	margin-bottom: 5rem;
-	max-width: 35rem;
-	border: var(--borderTest);
+	margin-bottom: 0rem;
+	max-width: 40rem;
 	padding: 1.5rem;
 	border-radius: var(--border-radius);
 
@@ -132,7 +128,7 @@ body{
 }
 img {
 	width: 100%;
-	max-width: 30rem;
+	max-width: 35rem;
 }
 .header{
 	font-family: var(--font-young) ;
@@ -148,6 +144,7 @@ img {
 	font-weight: 400;
 	line-height: 1rem;
 	font-family: var(--font-outfit-light);
+	margin-top: 1rem;
 }
 .prep-container{
 	background:var(--Rose-50);
@@ -187,6 +184,7 @@ img {
 	color: var(--Rose-800);
 	font-family: var(--font-young);
 	font-weight: 100;
+	margin-bottom: 1rem;
 }
 .ingredients-container ul{
 	list-style-type: none;
@@ -196,10 +194,68 @@ img {
 }
 .ingredients-container ul li::before{
 	content: "•";
-	padding: 0.75rem;
+	padding-right: 1.5rem;
 	line-height: 2rem;
 }
 hr{
 	border: 0.1px solid #efefef;
 	margin-bottom: 1.75rem;
+}
+.instructions-container{
+	margin: 1.5rem 1rem;
+}
+.instructions-container h2 {
+	color: var(--Rose-800);
+	font-family: var(--font-young);
+	font-weight: 100;	
+	margin-bottom: 1rem;
+}
+.instructions-container ul{
+	list-style-type:decimal;
+	padding-left: 1rem;
+}
+.instructions-container ul li {
+	font-family: var(--font-outfit-Regular);
+	font-size: 0.90rem;
+	line-height: 1.5rem;
+	color: var(--Stone-600);
+	padding-left: 1rem;
+}
+.instructions-container ul li::marker {
+	color: var(--Rose-800);
+}
+.instructions-container ul li span{
+	font-family: var(--font-outfit-SemiBold);
+}
+.nutrition-container{
+	margin: 1.5rem 1rem;
+}
+.nutrition-container h2 {
+	color: var(--Rose-800);
+	font-family: var(--font-young);
+	font-weight: 100;		
+	margin-bottom: 1rem;
+}
+.nutrition-container p {
+	font-family:var(--font-outfit-Regular);
+	font-size: 0.90rem;
+	color: var(--Stone-600);
+	margin-bottom: 1.5rem;
+}
+.nutrition-container table{
+	width: 100%;
+	padding: 1rem;
+	border-collapse: collapse;
+}
+.nutrition-container table td {
+	padding: 0.75rem;
+	border-bottom: 1px solid #efefef;
+}
+.td {
+	color: var(--Stone-600);
+	font-family: var(--font-outfit-Regular);
+}
+.td2{
+	color: var(--Rose-800);
+	font-family: var(--font-outfit-SemiBold);
 }
